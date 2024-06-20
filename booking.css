@@ -1,6 +1,7 @@
 body {
     font-family: "Poppins", sans-serif;
     /* overflow-x: hidden; */
+    background-color: #f4f4f4;
 }
 
 main {
@@ -20,7 +21,7 @@ main {
 /* HOTEL DETALS */
 .hotelDetails {
   
-  
+    background-color: white;
     border-radius: 10px;
 
 
@@ -42,7 +43,7 @@ main {
     margin: 0px 5%;
     border: 1px solid;
     padding: 10px;
-    background-color: rgb(241, 243, 244);
+    background-color: white;
 }
 .formTitle {
     text-align: center;
@@ -136,3 +137,6 @@ input {
     border-radius: 10px;
     margin: 2% 40%; 
 }
+
+
+

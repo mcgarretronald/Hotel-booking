@@ -1,4 +1,3 @@
-
 body {
     font-family: "Poppins", sans-serif;
 }
@@ -32,7 +31,7 @@ header nav ul {
     width: 500px;
     align-items: center;
     margin-left: 40%;
-    
+
 
 }
 
@@ -60,9 +59,10 @@ button {
 }
 
 .adminpaneltitile {
-    margin-left: 30%;
+  text-align: center;
     font-weight: 100;
 }
+
 /* EVENT */
 .event-form,
 .event-list {
@@ -81,10 +81,22 @@ button {
     border: 1px solid #ddd;
     margin-bottom: 10px;
 }
-#eventImage{
+
+#eventImage {
     padding: 20px;
 }
-.admin-section{
+
+.admin-section {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.bookings {
+    border: 1px solid;
+
+}
+
+.bookingtitle {
+    text-align: center;
+    font-weight: 100;
 }

@@ -48,3 +48,30 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
 
     window.location.href = 'invoice.html' + queryString;
 });
+
+
+// ADMIN PAGE
+document.getElementById('bookingForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const booking = {
+        firstName: document.getElementById('firstName').value,
+        lastName: document.getElementById('lastName').value,
+        roomType: document.getElementById('roomtype').value,
+        email: document.getElementById('email').value,
+        noOfGuest: document.getElementById('noOfGuest').value,
+        arrivalDate: document.getElementById('ArrivalDate').value,
+        arrivalTime: document.getElementById('time').value,
+        departureDate: document.getElementById('DepartureDate').value,
+        freePickup: document.querySelector('input[name="freepickup"]:checked').value,
+        specialRequest: document.getElementById('specialRequest').value
+    };
+
+    let bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    bookings.push(booking);
+    localStorage.setItem('bookings', JSON.stringify(bookings));
+
+    alert('Booking submitted successfully!');
+    document.getElementById('bookingForm').reset();
+});
+

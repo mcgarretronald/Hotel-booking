@@ -70,3 +70,29 @@ document.getElementById('addEventForm').addEventListener('submit', addEvent);
 
 // Initial display of events
 document.addEventListener('DOMContentLoaded', displayEvents);
+
+
+// BOOKINGS
+document.addEventListener('DOMContentLoaded', function() {
+    const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
+    const bookingsContainer = document.getElementById('bookings');
+
+    bookings.forEach(booking => {
+        const bookingElement = document.createElement('div');
+        bookingElement.classList.add('booking');
+
+        bookingElement.innerHTML = `
+            <h3>${booking.firstName} ${booking.lastName}</h3>
+            <p>Email: ${booking.email}</p>
+            <p>Room Type: ${booking.roomType}</p>
+            <p>Number of Guests: ${booking.noOfGuest}</p>
+            <p>Arrival: ${booking.arrivalDate} at ${booking.arrivalTime}</p>
+            <p>Departure: ${booking.departureDate}</p>
+            <p>Free Pickup: ${booking.freePickup}</p>
+            <p>Special Request: ${booking.specialRequest}</p>
+        `;
+
+        bookingsContainer.appendChild(bookingElement);
+    });
+});
+
