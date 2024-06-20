@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Manage Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+   
+<link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="">
+    <header>
+        <section><img
+                src="data:image/png;base64,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"
+                alt="Logo"></section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+    
+
+            </ul>
+        </nav>
+        <section><a href="rooms.html"><button type="button">Book Now</button></a></section>
+    </header>
+    <h1 class="adminpaneltitile">Admin Panel - Manage Events</h1>
+    <div class="admin-section">
+        <div class="event-form">
+            <h2>Add Event</h2>
+            <form id="addEventForm">
+                <label>
+                    Event Name:
+                    <input type="text" id="eventName" required>
+                </label><br><br>
+                <label>
+                    Date:
+                    <input type="date" id="eventDate" required>
+                </label><br><br>
+                <label>
+                    Time:
+                    <input type="time" id="eventTime" required>
+                </label><br><br>
+                <label>
+                    Description:
+                    <input id="eventDescription" required></input>
+                </label><br><br>
+                <label>
+                    Location:
+                    <input type="text" id="eventLocation" required>
+                </label><br><br>
+                <label>
+                    Capacity:
+                    <input type="number" id="eventCapacity" required>
+                </label><br><br>
+                <label>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+        <div class="event-list">
+            <h2>Existing Events</h2>
+            <div id="eventsContainer"></div>
+        </div>
+    </div>
+
+  
+</body>
+<script src="admin.js"></script>
+</html>

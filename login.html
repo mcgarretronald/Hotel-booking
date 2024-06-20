@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        .login-form {
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .login-form input {
+            display: block;
+            width: 90%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .login-form button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: rgb(244, 176, 50);
+            color: white;
+            font-weight: 700;
+            border: none;
+            padding: 10px 50px;
+            font-family: "Poppins", sans-serif;
+            border-radius: 10px;
+
+        }
+
+        .error-message {
+            color: red;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+
+        h2 {
+      
+
+            font-weight: 300;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-form">
+        <h2>Admin Login</h2>
+        <div class="error-message" id="errorMessage"></div>
+        <input type="password" id="adminPassword" placeholder="Enter Password">
+        <button onclick="validatePassword()">Login</button>
+        <button onclick="goBack()">Go Back</button>
+    </div>
+
+    <script>
+        // admin password
+        const correctPassword = "admin123";
+
+        function validatePassword() {
+            const password = document.getElementById('adminPassword').value;
+            if (password === correctPassword) {
+                window.location.href = 'admin.html';
+            } else {
+                document.getElementById('errorMessage').textContent = 'Incorrect password. Please try again.';
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+
+</html>

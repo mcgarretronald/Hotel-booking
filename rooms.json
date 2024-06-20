@@ -1,0 +1,125 @@
+{
+    "hotels": [
+      {
+        "id": 1,
+        "name": "Serenity Haven Hotel",
+        "location": "Room 1",
+        "price": 500,
+        "currency": "USD",
+        "rating": 4.5,
+        "amenities": ["Free WiFi", "Pool", "Spa", "Gym"],
+    
+        "availability": true,
+        "image": "/roompics/1.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Cozy Retreat Hotel",
+        "location": "Room 2",
+        "price": 150,
+        "currency": "USD",
+        "rating": 4.0,
+        "amenities": ["Free Breakfast", "Parking", "Gym"],
+     
+        "availability": true,
+        "image": "/roompics/2.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Luxury Palace Hotel",
+        "location": "Room 3",
+        "price": 350,
+        "currency": "USD",
+        "rating": 4.8,
+        "amenities": ["Butler Service", "Infinity Pool", "Helipad", "Spa"],
+        "roomType": "Suite",
+        "availability": false,
+        "image": "/roompics/3.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Budget Inn",
+        "location": "Room 4",
+        "price": 80,
+        "currency": "USD",
+        "rating": 3.5,
+        "amenities": ["Free Parking", "WiFi", "Breakfast"],
+     
+        "availability": true,
+        "image": "/roompics/4.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Seaside Escape Hotel",
+        "location": "Room 5",
+        "price": 220,
+        "currency": "USD",
+        "rating": 4.2,
+        "amenities": ["Beach Access", "Pool", "Free Breakfast", "Gym"],
+        "roomType": "Ocean View Room",
+        "availability": true,
+        "image": "/roompics/5.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Mountain Lodge",
+        "location": "Room 6",
+        "price": 180,
+        "currency": "USD",
+        "rating": 4.3,
+        "amenities": ["Ski-in/Ski-out", "Hot Tub", "Free Breakfast"],
+      
+        "availability": false,
+        "image": "/roompics/6.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Urban Oasis Hotel",
+        "location": "Room 7",
+        "price": 250,
+        "currency": "USD",
+        "rating": 4.6,
+        "amenities": ["Rooftop Pool", "Bar", "Gym", "Spa"],
+      
+        "availability": true,
+        "image": "/roompics/7.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Countryside Inn",
+        "location": "Room 8",
+        "price": 130,
+        "currency": "USD",
+        "rating": 4.1,
+        "amenities": ["Free Breakfast", "Parking", "Garden"],
+     
+        "availability": true,
+        "image": "/roompics/8.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Historic Hotel",
+        "location": "Room 9",
+        "price": 275,
+        "currency": "USD",
+        "rating": 4.7,
+        "amenities": ["Historic Tours", "Free WiFi", "Spa"],
+    
+        "availability": false,
+        "image": "/roompics/9.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Desert Mirage Hotel",
+        "location": "7Room 10",
+        "price": 240,
+        "currency": "USD",
+        "rating": 4.4,
+        "amenities": ["Desert Tours", "Pool", "Free WiFi", "Gym"],
+      
+        "availability": true,
+        "image": "/roompics/10.jpg"
+      }
+    ]
+  }
+  

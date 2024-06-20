@@ -1,0 +1,16 @@
+@media only screen and (max-width:882px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .A {
+        display:flex;
+        flex-direction: column;
+        
+    }
+    
+}
+@media only screen and (min-width:768px) and (max-width:1280px) {
+    
+}

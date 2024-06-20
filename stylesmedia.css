@@ -1,0 +1,350 @@
+@media only screen and (max-width:882px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        display: none;
+    }
+
+    .landingPageText {
+        color: white;
+        position: absolute;
+        top: 5%;
+        left: 2%;
+    }
+
+    .landingPageText h1 {
+        font-size: 45px;
+    }
+
+    .landingPageText h2 {
+        margin-left: 2%;
+
+    }
+
+    .landingPageImage img {
+
+        filter: brightness(70%);
+    }
+
+
+    .landingPageTextB {
+        margin-left: 0%;
+    }
+
+    .landingPageText button {
+
+        margin-left: 35%;
+    }
+
+    /* ABOUT US */
+    #aboutus {
+        margin: 5% 2%;
+    }
+
+    #aboutus h1 {
+        margin-left: 20%;
+
+      
+    }
+
+    /* OUR ROOMS */
+    #ourrooms {
+        margin: 0px 2%;
+
+    }
+
+    .ourroomsTitle {
+        margin-left: 15%;
+
+       
+    }
+
+    .pieceOfMind {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .pieceOfMind-content {
+        margin: 0% 0%;
+    }
+
+    /* DELUX ROOM */
+    .deluxroom {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .deluxroom-text {
+        margin: 0% 0%;
+
+    }
+
+    /* COZY ROOMS */
+    .cosyrooms {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cosyrooms section img {
+        display: none;
+    }
+
+    .cosyroomText {
+        margin: 0% 0%;
+
+    }
+
+    /* OUR EVENTS */
+    .ourevents-Title {
+        margin-left: 15%;
+
+    }
+
+    /* OUR CUISINE */
+    .cuisineTitle {
+        margin-left: 15%;
+
+    }
+
+
+    .fish {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .fish-info {
+        margin-left: 35%;
+        margin: 0% 2%;
+
+    }
+
+    /* OUR STORY */
+    #ourstory {
+        margin: 0px 2%;
+
+    }
+
+    .ourstory-title {
+        margin-left: 20%;
+        margin-bottom: 25%;
+
+        font-weight: 100;
+    }
+
+    /* OUR STORY */
+    .ourstorymain {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ourstoryText {
+        width: 300px;
+        left: 30px;
+
+    }
+
+    .ourstory-content img {
+        /* height: auto; */
+        width: 100%;
+
+    }
+
+    /* CONTACT US */
+    .contactTitle {
+        margin-left: 15%;
+    }
+
+    form {
+        margin: 0px 0%;
+
+
+    }
+
+    #sendformbutton {
+        margin-top: 73%;
+        margin-left: 0%;
+
+
+    }
+
+    /* FOOTER */
+    footer {
+        width: 100%;
+    }
+
+    #footerlogo img {
+      justify-self: center;
+
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+ 
+    #rights {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1280px) {
+    header {
+        display:flex;
+        justify-content: space-between;
+    }
+    .landingPageText {
+        color: white;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    .landingPageText h2 {
+        margin-left: 5%;
+
+    }
+    .landingPageTextB{
+        margin-left: 27%;
+    }
+
+    .landingPageText button {
+
+        margin-left: 45%;
+    }
+    #aboutus {
+        margin: 5% 2%;
+    }
+
+    #aboutus h1 { 
+        margin-left: 35%;
+    }
+    .ourroomsTitle {
+        margin-left: 32%;   
+    }
+    .pieceOfMind {
+        display: grid;
+        grid-template-columns: 50%auto;
+        grid-gap: 30px;
+        margin-top: 5%;
+    }
+    .pieceOfMind-content {
+        margin: 15% 0%;
+    }
+    .deluxroom {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-gap: 30px;
+    }
+    .deluxroom-text {
+        margin: 15% 0%;
+    }
+    .cosyrooms {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-gap: 30px;
+        margin-top: 5%;
+    }
+
+    .cosyrooms section img {
+        display:  block;
+    }
+
+    .cosyroomText {
+        margin: 20% 0%;
+
+    }
+    .ourevents-Title {
+        margin-left: 35%;
+
+    }
+    .cuisineTitle {
+        margin-left: 35%;
+
+    }
+    .fish {
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-gap: 30px;
+    }
+    .fish-info {
+       
+        margin: 10% 2%;
+
+    }
+    .ourstorymain {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    #ourstory {
+        margin: 0px 0%;
+    
+    }
+    .ourstoryText {
+        width: 300px;
+        left: auto;
+
+    }
+    
+    .ourstorymain {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+    }
+    
+    .ourstory-title {
+        margin-left: 40%;
+        margin-bottom: 10%;
+        font-size: 50px;
+        font-weight: 100;
+    }
+    
+    .ourstory-content {
+    
+        position: relative;
+    }
+    .ourstoryTextA  {
+       width: 500px;
+    }
+    
+    .ourstory-content img {
+        height: 800px;
+        width: 500px;
+    
+    }
+    .contactTitle {
+        margin-left: 35%;
+    }
+    #sendformbutton {
+        margin-top: 40%;
+        margin-left: 10%;
+
+
+    }
+    .footerContent {
+        display: flex;
+        flex-direction: row;
+    }
+    #footerlogo img {
+       justify-self: center;
+
+    }
+   
+
+   
+    
+
+    
+
+}

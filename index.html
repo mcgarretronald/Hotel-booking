@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serenity Hotel</title>
+    <script src="https://kit.fontawesome.com/26bacd17cb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesmedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <section><img src="data:image/png;base64,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" alt="Logo"></section>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#ourrooms">Room</a></li>
+                <li><a href="#ourevents">Events</a></li>
+                <li><a href="#cuisine">Cuisine</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li><a href="login.html">login</a></li>
+               
+            </ul>
+        </nav>
+        <section><a href="rooms.html"><button type="button">Book Now</button></a></section>
+    </header>
+    <main>
+        <div class="landingPageImage">
+            <img src="/pics/vojtech-bruzek-Yrxr3bsPdS0-unsplash.jpg" alt=" hotel image">
+        </div>
+        <div class="landingPageText">
+            <h1>GET GRAND AND COMFORT</h1>
+            <h2>Welcome To The Place Where Grand <br><span class="landingPageTextB"> Meets Affordability</span></h2>
+            <a href="rooms.html"><button type="button">Book Now</button></a>
+        </div>
+        <div id="aboutus">
+            <h1>About Us</h1>
+            <p>Welcome to Serenity Haven Hotel, your oasis of luxury and comfort in the heart of Nairobi. Since
+                2005, we have been dedicated to providing exceptional service and a memorable experience for every
+                guest. Our elegantly designed rooms, gourmet dining options, and top-notch amenities ensure a perfect
+                stay, whether you're here for relaxation or adventure. Discover the perfect blend of tranquility and
+                convenience at Serenity Haven Hotel. We look forward to welcoming you.</p>
+        </div>
+
+        <!-- OUR ROOMS -->
+        <div id="ourrooms">
+            <h1 class="ourroomsTitle">Our Rooms</h1>
+            <section class="pieceOfMind">
+                <section>
+                    <img src="/pics/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="hotel room">
+
+                </section>
+                <section class="pieceOfMind-content">
+                    <h1>PEACE OF MIND</h1>
+                    <p>Discover peace of mind in our Tranquility Room, designed to provide the ultimate sanctuary from
+                        the outside world. This elegantly appointed space features soothing décor, plush bedding, and
+                        modern amenities, creating an environment perfect for relaxation and rejuvenation. Whether
+                        you're unwinding after a long day or seeking a quiet retreat, the Tranquility Room offers a
+                        serene haven where you can truly relax and recharge.
+                    </p>
+                    <a href="rooms.html"><button type="button">EXPLORE OUR ROOMS</button></a>
+                </section>
+            </section>
+
+
+
+            <section class="deluxroom">
+
+                <section class="deluxroom-text">
+                    <h1>DELUXE ROOM</h1>
+                    <p>Experience the epitome of comfort in our Deluxe Room. Thoughtfully designed with luxurious
+                        furnishings and modern amenities, this spacious room offers a perfect blend of elegance and
+                        convenience. Enjoy a restful night's sleep on plush bedding, unwind in the cozy seating
+                        area, and take in stunning views from your private balcony. The Deluxe Room promises an
+                        indulgent stay, ensuring you feel pampered and refreshed.
+                    </p>
+                    <button type="button" class="checkavailability">CHECK AVAILABILITY</button>
+
+                </section>
+                <section>
+                    <img src="/pics/roberto-nickson-emqnSQwQQDo-unsplash.jpg" alt="">
+                </section>
+            </section>
+            <section class="cosyrooms">
+                <section>
+                    <img src="/pics/adam-winger-5zX1KAjPl4o-unsplash.jpg" alt="">
+                </section>
+                <section class="cosyroomText">
+                    <h1>COZY ROOM</h1>
+                    <p>Welcome to our Cozy Room, a warm and inviting retreat designed for ultimate comfort. This
+                        charming space features soft, plush bedding, intimate lighting, and thoughtfully selected
+                        furnishings that create a homely atmosphere. Perfect for solo travelers or couples, the Cozy
+                        Room provides a serene and restful environment where you can unwind and feel at ease. Enjoy a
+                        peaceful stay with all the modern amenities you need in our Cozy Room.
+                    </p>
+                    <button type="button" id="checkavailability">CHECK AVAILABILITY</button>
+                </section>
+
+            </section>
+
+
+        </div>
+        <!-- OUR EVENTS -->
+        <h1 class="ourevents-Title">Our Events</h1>
+        <div id="ourevents">
+
+
+
+        </div>
+        </div>
+       
+        <div id="cuisine">
+            <h1 class="cuisineTitle">Our Cuisine</h1>
+            <section class="fish">
+                <section class="fish-image">
+                    <img src="/pics/nima-naseri-U7gUHULn9ZU-unsplash.jpg" alt="">
+                </section>
+                <section class="fish-info">
+                    <h1>Grilled Sea Bass</h1>
+                    <p>
+                        Exquisite Grilled Sea Bass
+                        Indulge in our Exquisite Grilled Sea Bass, a true delight for seafood lovers. This dish
+                        features the freshest sea bass, marinated with a blend of aromatic herbs and spices to
+                        enhance its natural flavors. Expertly grilled to achieve a perfect balance of a crispy,
+                        golden-brown skin and tender, flaky interior, each bite promises a burst of savory goodness.
+
+                    </p>
+                </section>
+            </section>
+
+        </div>
+        <div id="ourstory">
+            <h1 class="ourstory-title">Our Story</h1>
+            <div class="ourstorymain">
+                <section class="ourstory-content">
+                    <img src="/pics/oswald-elsaboath-ym_EI-DTS1g-unsplash.jpg" alt="">
+                    <section class="ourstoryText">
+                        <p>This could be due to factors like high volume of guests, special events, or even customer
+                            PROVIDING
+                            preferences.The goal is to ensure that all customers are provided with a comfortable and
+                            enjoyable dining experience. By efficiently providing
+                            <br>
+                            <span>
+                                A QUIET, PEACEFUL VILLAGE WITH
+                                CHARACTER.
+                            </span>
+                        </p>
+                    </section>
+                </section>
+                <section class="ourstoryTextA">
+                    <p>Hotel Managment often has the flexibility to accomodate guests'requests to move them to another
+                        location within the hotel.This may be due to reasons such as room availability, guest
+                        preferences,
+                        or maintainance issues. The Hotel managment team ensures that customers are transferd seamlessly
+                        and
+                        without inconvinience,
+                        <br>
+                        <span>
+                            YOU HAVE JUST SETTLED TO STAY AT ONE OF THE TOP 25 HOTELS IN THE WORLD
+                        </span>
+                    </p>
+                </section>
+            </div>
+        </div>
+        <div id="contact">
+            <h1 class="contactTitle">Contact Us</h1>
+            <form action="">
+                <section>
+                    <!-- first name -->
+                    <label for="firstname">First Name</label> <br>
+                    <input type="text">
+                    <br> <br>
+                    <!-- city -->
+                    <label for="city">City</label><br>
+                    <input type="text">
+                    <br><br>
+
+                    <!--phone  -->
+                    <label for="phone">Phone</label><br>
+                    <input type="tel">
+                    <br><br>
+
+                    <!-- message -->
+                    <label for="message" >Message</label><br>
+                    <input type="text" id="message">
+                    <br>
+
+                </section>
+                <section>
+
+                    <!-- last name -->
+                    <label for="lastname">Last Name</label><br>
+                    <input type="text">
+                    <br> <br>
+                    <!-- Country -->
+                    <label for="country">Country</label><br>
+                    <input type="text">
+                    <br> <br>
+                    <!-- email -->
+                    <label for="email">Email</label><br>
+                    <input type="email">
+                    <br>
+                    <!-- button -->
+                    <button type="submit" id="sendformbutton">SEND</button>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footerlogo">
+            <img src="data:image/png;base64,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" alt="Logo">
+        </div>
+        <div class="footerContent">
+            <section>
+                <h1>About</h1>
+                <ul>
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#">Carrers</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+
+            </section>
+            <section>
+                <h1>Reservations</h1>
+                <ul>
+                    <li><a href="#">Request an invoice</a></li>
+                    <li><a href="#">Find a reservation </a></li>
+                    <li><a href="#">Email Preferences</a></li>
+                </ul>
+            </section>
+            <section>
+                <h1>News</h1>
+                <ul>
+                    <li><a href="#">Press room</a></li>
+                    <li><a href="#">New Openings</a></li>
+                    <li><a href="#">Magazine</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </section>
+        </div>
+        <div class="socialIcons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <hr>
+        <div id="rights">
+            <section>Legal notice</section>
+            <section>Privacy Policy</section>
+            <section>Cookie Preferences</section>
+            <section>Cookie Accessibility Policy</section>
+        </div>
+    </footer>
+
+</body>
+<script src="index.js"></script>
+
+</html>

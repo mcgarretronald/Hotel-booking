@@ -1,0 +1,138 @@
+body {
+    font-family: "Poppins", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 30px;
+
+}
+
+.bookinTitle {
+    align-self: center;
+    text-align: center;
+    font-weight: 100;
+    line-height: 10px;
+}
+
+/* HOTEL DETALS */
+.hotelDetails {
+  
+  
+    border-radius: 10px;
+
+
+
+}
+
+#hotelDetails {
+    margin: 5% 20%;
+}
+
+.hotelDetails img {
+
+    border-radius: 2pc;
+}
+
+/* FORM  */
+.bookingForm{
+    border-radius: 10px;
+    margin: 0px 5%;
+    border: 1px solid;
+    padding: 10px;
+    background-color: rgb(241, 243, 244);
+}
+.formTitle {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+}
+
+.formsubTitle {
+    text-align: center;
+}
+
+/* section class a */
+.A {
+    display: grid;
+    margin-top: 5%;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.A span {
+    font-size: 10px;
+    display: block;
+    color: grey;
+}
+
+.names {
+    height: 5px;
+    width: 30%;
+}
+
+.spannames {
+    font-size: 10px;
+    color: grey;
+    display: flex;
+    gap: 130px;
+}
+
+#roomtype {
+    margin-top: 2%;
+    padding: 10px;
+    width: 72%;
+}
+
+/* arrival date and time */
+
+#ampm {
+    padding: 13px;
+
+}
+
+/* DEPARTURE  */
+#DepartureDate {
+    width: 53%;
+}
+
+/* Pickup */
+.freepickup {
+ 
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+/* SPECIAL REQUEST */
+#specialRequest {
+    width: 95%;
+    height: 100px;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+    color: white;
+    background-color: rgb(244, 176, 50);
+    border: none;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    margin: 2% 40%;
+
+
+}
+.backButton{
+    color: white;
+    background-color: rgb(244, 176, 50);
+    border: none;
+    padding: 10px 20px;
+    font-family: "Poppins", sans-serif;
+    border-radius: 10px;
+    margin: 2% 40%; 
+}
