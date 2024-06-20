@@ -73,13 +73,14 @@ document.addEventListener('DOMContentLoaded', displayEvents);
 
 
 // BOOKINGS
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const bookings = JSON.parse(localStorage.getItem('bookings')) || [];
     const bookingsContainer = document.getElementById('bookings');
 
     bookings.forEach(booking => {
         const bookingElement = document.createElement('div');
         bookingElement.classList.add('booking');
+        bookingElement.style.border = '1px solid '
 
         bookingElement.innerHTML = `
             <h3>${booking.firstName} ${booking.lastName}</h3>
