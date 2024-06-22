@@ -59,7 +59,7 @@ button {
 }
 
 .adminpaneltitile {
-  text-align: center;
+    text-align: center;
     font-weight: 100;
 }
 
@@ -95,11 +95,44 @@ button {
     border: 1px solid;
 
 }
-.booking{
+
+.booking {
     border: 1px solid;
 }
 
 .bookingtitle {
     text-align: center;
     font-weight: 100;
+}
+
+@media only screen and (max-width:882px) {
+    header nav ul {
+        display: flex;
+        width: 500px;
+        align-items: center;
+        margin-left: 0%;
+    
+    
+    }
+    body{
+       overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+    }
+
+    header section button {
+        display: none;
+    }
+
+    .event-form,
+    .event-list {
+
+        display: flex;
+        flex-direction: column;
+    }
+    .admin-section{
+        display: flex;
+        flex-direction: column;
+    }
 }

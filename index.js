@@ -1,3 +1,26 @@
+// Hambuger menu
+
+document.addEventListener('DOMContentLoaded', () => {
+    const displayMenu = document.querySelector('.open-menu');
+    const closeMenu = document.querySelector('.close-menu');
+    const menu = document.getElementById('menu');
+
+    displayMenu.addEventListener('click', () => {
+        menu.style.right = '0';
+        displayMenu.style.display = 'none';
+        closeMenu.style.display = 'block';
+    });
+
+    closeMenu.addEventListener('click', () => {
+        menu.style.right = '-100%';
+        displayMenu.style.display = 'block';
+        closeMenu.style.display = 'none';
+    });
+});
+
+
+
+
 const checkAvailabilityButton = document.querySelector('.checkavailability');
 checkAvailabilityButton.addEventListener('click', () => {
     function showNotification(message) {
@@ -9,8 +32,8 @@ checkAvailabilityButton.addEventListener('click', () => {
     }
 
     showNotification('Room Not Available 😊.');
-    
-    
+
+
 });
 // ANAOTHER BUTTON
 const AvailabilityButton = document.querySelector('#checkavailability');
@@ -24,8 +47,8 @@ AvailabilityButton.addEventListener('click', () => {
     }
 
     showNotification('Room Not Available 😊.');
-    
-    
+
+
 });
 
 
@@ -35,7 +58,7 @@ AvailabilityButton.addEventListener('click', () => {
 function createEventElement(event) {
     const eventDiv = document.createElement('div');
     eventDiv.classList.add('event');
-    eventDiv.style.width='200px'
+    eventDiv.style.width = '200px'
 
     const title = document.createElement('div');
     title.classList.add('event-title');
@@ -84,3 +107,7 @@ function loadEvents() {
 
 // Load events when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', loadEvents);
+
+
+
+

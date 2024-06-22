@@ -10,6 +10,8 @@ function displayHotelDetails() {
         const hotelImage = document.createElement('img');
         hotelImage.src = hotel.image;
         hotelImage.alt = `${hotel.name} image`;
+        hotelImage.style.width='300px'
+        hotelImage.style.marginLeft='0px'
 
         const hotelPrice = document.createElement('p');
         hotelPrice.innerHTML = `<strong>Price</strong>: ${hotel.currency} ${hotel.price}`;

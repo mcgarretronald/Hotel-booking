@@ -1,6 +1,13 @@
 @media only screen and (max-width:882px) {
+/* hamburger menu */
+.hamburgerHeader{
+    display:block;
+}
+
+
     body {
         overflow-x: hidden;
+
     }
 
     header {
@@ -10,7 +17,7 @@
     .landingPageText {
         color: white;
         position: absolute;
-        top: 5%;
+        top: 15%;
         left: 2%;
     }
 
@@ -177,14 +184,22 @@
         width: 100%;
     }
 
-    #footerlogo img {
-      justify-self: center;
-
+    footer section h1 {
+        margin-left: 8%;
+        font-weight: 200;
+        text-align:start;
     }
+    #footerlogo img {
+        margin: 0px 35%;
+   
+    }
+    
+    
 
     .footerContent {
         display: flex;
         flex-direction: column;
+        left: 0;
     }
 
  
@@ -198,7 +213,10 @@
 
 }
 
-@media only screen and (min-width:768px) and (max-width:1280px) {
+@media only screen and (min-width:768px) and (max-width:1200px) {
+    .hamburgerHeader{
+        display:none;
+    }
     header {
         display:flex;
         justify-content: space-between;

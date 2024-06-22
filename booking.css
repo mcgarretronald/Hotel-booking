@@ -33,6 +33,7 @@ main {
 }
 
 .hotelDetails img {
+    margin-left: 0;
 
     border-radius: 2pc;
 }
@@ -51,6 +52,7 @@ main {
 
 input {
     padding: 10px;
+    border: 1px solid;
 }
 
 .formsubTitle {
